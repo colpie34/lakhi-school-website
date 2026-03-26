@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lakhi Public School</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        color: white;
+        overflow-x: hidden;
+    }
+
+    /* Animated Background */
+    body::before {
+        content: "";
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: url('https://images.unsplash.com/photo-1588072432836-e10032774350') no-repeat center/cover;
+        filter: brightness(0.4);
+        z-index: -1;
+        animation: zoomBg 20s infinite alternate;
+    }
+
+    @keyframes zoomBg {
+        from { transform: scale(1); }
+        to { transform: scale(1.1); }
+    }
+
+    header {
+        background: rgba(0,0,0,0.7);
+        padding: 20px;
+        text-align: center;
+        border-bottom: 3px solid gold;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+        color: gold;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        background: rgba(0,0,0,0.8);
+        padding: 10px;
+    }
+
+    nav a {
+        color: white;
+        margin: 0 15px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    nav a:hover {
+        color: gold;
+    }
+
+    section {
+        padding: 50px 20px;
+        text-align: center;
+    }
+
+    .box {
+        background: rgba(0,0,0,0.7);
+        padding: 30px;
+        border-radius: 10px;
+        max-width: 800px;
+        margin: auto;
+        box-shadow: 0 0 15px rgba(255,215,0,0.5);
+    }
+
+    .box h2 {
+        color: gold;
+        margin-bottom: 15px;
+    }
+
+    .features {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .feature {
+        background: rgba(255,255,255,0.1);
+        margin: 10px;
+        padding: 20px;
+        border-radius: 10px;
+        width: 200px;
+        transition: 0.3s;
+    }
+
+    .feature:hover {
+        background: rgba(255,215,0,0.3);
+        transform: scale(1.05);
+    }
+
+    footer {
+        background: rgba(0,0,0,0.9);
+        text-align: center;
+        padding: 20px;
+        margin-top: 30px;
+        border-top: 2px solid gold;
+    }
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Lakhi Public School</h1>
+    <p>House No. 7, Lakhi Public School Campus</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Facilities</a>
+    <a href="#">Contact</a>
+</nav>
+
+<section>
+    <div class="box">
+        <h2>Welcome to Lakhi Public School</h2>
+        <p>
+            Lakhi Public School is dedicated to providing high-quality education
+            and nurturing young minds for a brighter future. We focus on academic
+            excellence, discipline, and overall development of students.
+        </p>
+    </div>
+</section>
+
+<section>
+    <div class="box">
+        <h2>Our Facilities</h2>
+        <div class="features">
+            <div class="feature">Smart Classrooms</div>
+            <div class="feature">Experienced Teachers</div>
+            <div class="feature">Library</div>
+            <div class="feature">Sports Activities</div>
+            <div class="feature">Computer Lab</div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="box">
+        <h2>Contact Us</h2>
+        <p><strong>Phone:</strong> 111111111</p>
+        <p><strong>Address:</strong> House No. 7, Lakhi Public School</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Lakhi Public School | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
